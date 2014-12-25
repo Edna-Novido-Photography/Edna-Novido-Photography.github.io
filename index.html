@@ -12,33 +12,101 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 
 
   <style>
     body {
-      background-image: url("img/Ice_White_Gradient_by_Halaxega.png");
-      background-repeat: repeat-x;
+      /*background-image: url("img/Ice_White_Gradient_by_Halaxega.png");*/
+      /*background-repeat: repeat-x;*/
+      background-color: rgb(51,51,51);
     }
   </style>
 </head>
 
 <body ng-controller="myAppCtrl">
-  <div class="container-fluid">
-    <ul class="nav nav-pills">
-      <li class="{{finearts}}" ng-click="myFunction('#/finearts')"><a href="#/finearts">Finearts</a></li>
-      <li class="{{portraits}}" ng-click="myFunction('#/portraits')"><a href="#/portraits">Portraits</a></li>
-      <li class="{{sports}}" ng-click="myFunction('#/sports')"><a href="#/sports">Sports</a></li>
-      <li class="{{weddings}}" ng-click="myFunction('#/weddings')"><a href="#/weddings">Weddings</a></li>
-      <li class="{{realEstate}}" ng-click="myFunction('#/realEstate')"><a href="#/realEstate">Real Estate</a></li>
-      <li class="{{events}}" ng-click="myFunction('#/events')"><a href="#/events">Events</a></li>
-      <li class="{{aboutme}}" ng-click="myFunction('#/aboutme')"><a href="#/aboutme">About Me</a></li>
+  <!--<div class="container-fluid">-->
+    <!--<ul class="nav nav-pills">-->
+      <!--<li class="{{finearts}}" ng-click="myFunction('#/finearts')"><a href="#/finearts">Finearts</a></li>-->
+      <!--<li class="{{portraits}}" ng-click="myFunction('#/portraits')"><a href="#/portraits">Portraits</a></li>-->
+      <!--<li class="{{sports}}" ng-click="myFunction('#/sports')"><a href="#/sports">Sports</a></li>-->
+      <!--<li class="{{weddings}}" ng-click="myFunction('#/weddings')"><a href="#/weddings">Weddings</a></li>-->
+      <!--<li class="{{realEstate}}" ng-click="myFunction('#/realEstate')"><a href="#/realEstate">Real Estate</a></li>-->
+      <!--<li class="{{events}}" ng-click="myFunction('#/events')"><a href="#/events">Events</a></li>-->
+      <!--<li class="{{aboutme}}" ng-click="myFunction('#/aboutme')"><a href="#/aboutme">About Me</a></li>-->
       <!--<li class="{{act2}}" ng-click="myFunction('#/jobhunt')"><a href="#/jobhunt">Job Hunting</a></li>-->
       <!--<li><a href="#/photography">Photography</a></li>-->
       <!--<li><a href="#/view2">view2</a></li>-->
-    </ul>
-  </div>
+    <!--</ul>-->
+  <!--</div>-->
+
+  <nav class="navbar navbar-edna" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Novido</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!--<ul class="nav navbar-nav">-->
+          <!--<li class="active"><a href="#">Link1 <span class="sr-only">(current)</span></a></li>-->
+          <!--<li class="{{jobhunt}}" ng-click="myFunction('#/jobhunt')"><a href="#/jobhunt">Job Hunting<span class="sr-only">(current)</span></a></li>-->
+          <!--<li class="{{act1}}" ng-click="myFunction('#/view1')"><a href="#/view1">Formula 1 Feeder</a></li>-->
+          <!--<li class="dropdown">-->
+            <!--<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BMI Calculator <span class="caret"></span></a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+              <!--<li><a href="#/view_bmi">Metric</a></li>-->
+              <!--<li><a href="#/view_bmi2">English</a></li>-->
+            <!--</ul>-->
+          <!--</li>-->
+          <!--<li class="{{act3}}" ng-click="myFunction('#/view_phone_cat')"><a href="#/view_phone_cat">Phone Category</a></li>-->
+          <!--<li class="{{act4}}" ng-click="myFunction('#/movie_stub')"><a href="#/movie_stub">Movie Stub</a></li>-->
+        <!--</ul>-->
+
+
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="{{gallery}}" ng-click="myFunction('#/gallery')"><a href="#/gallery">Gallery</a></li>
+          <li class="{{events}}" ng-click="myFunction('#/events')"><a href="#/events">Events</a></li>
+          <li class="{{news}}" ng-click="myFunction('#/news')"><a href="#/news">News</a></li>
+          <li class="{{aboutme}}" ng-click="myFunction('#/aboutme')"><a href="#/aboutme">About me</a></li>
+          <li class="{{contact}}" ng-click="myFunction('#/contact')"><a href="#/contact">Contact</a></li>
+
+          <!--<li class="dropdown">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+              <!--<li><a href="#">Action</a></li>-->
+              <!--<li><a href="#">Another action</a></li>-->
+              <!--<li><a href="#">Something else here</a></li>-->
+              <!--<li class="divider"></li>-->
+              <!--<li><a href="#">Separated link</a></li>-->
+            <!--</ul>-->
+          <!--</li>-->
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -51,11 +119,13 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="app.js"></script>
 
   <!--Photography-->

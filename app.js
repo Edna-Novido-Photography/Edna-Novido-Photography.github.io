@@ -16,14 +16,11 @@ controller('myAppCtrl', function($scope) {
 
     $scope.aboutme = "active";
     $scope.myFunction= function(path) {
-        $scope.finearts = (path === "#/finearts" ? "active" : "");
-        $scope.portraits = (path === "#/portraits" ? "active" : "");
-        $scope.sports = (path === "#/sports" ? "active" : "");
-        $scope.weddings = (path === "#/weddings" ? "active" : "");
-        $scope.realEstate = (path === "#/realEstate" ? "active" : "");
+        $scope.gallery = (path === "#/gallery" ? "active" : "");
         $scope.events = (path === "#/events" ? "active" : "");
+        $scope.news = (path === "#/news" ? "active" : "");
         $scope.aboutme = (path === "#/aboutme" ? "active" : "");
-
+        $scope.contact = (path === "#/contact" ? "active" : "");
     };
 })
 ;
